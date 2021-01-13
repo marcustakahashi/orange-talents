@@ -9,6 +9,6 @@ import br.com.mtakahashi.orangetalents.domain.model.Aposta;
 
 @Repository
 public interface ApostaRepository extends JpaRepository<Aposta, Long> {
-	List<Aposta> findBySolicitanteEmail(String email);
+	List<Aposta> findBySolicitanteEmailOrderById(String email);
 	Aposta findByNumerosAndSolicitanteEmail(String numeros, String email);
 }

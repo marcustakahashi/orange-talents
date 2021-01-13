@@ -23,11 +23,7 @@ public class ApostasService {
 	private ApostaRepository apostaRepository;
 	
 	public List<Aposta> buscarPorEmail(String email) {
-		/*var solicitante = solicitanteRepository.findByEmail(email);
-		if (solicitante == null) {
-			throw new DomainException("Não existe um cliente cadastrado com este e-mail.");
-		}*/
-		return apostaRepository.findBySolicitanteEmail(email);
+		return apostaRepository.findBySolicitanteEmailOrderById(email);
 	}
 
 	public Aposta criar(String email) {
