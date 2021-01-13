@@ -1,0 +1,4 @@
+CREATE TABLE solicitante (
+  id BIGINT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(80) NOT NULL,
+  PRIMARY KEY (id));
